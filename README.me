@@ -1,0 +1,19 @@
+Running Code:
+=============
+I am passing the path to the train data file and the test data file and in my Code
+I append the ".data" and ".label" to both data sets using .concat for pandas data frames.
+The commands I run in my terminal are:
+
+Vanilla Tree: python3 ID3.py titanic-train titanic-test vanilla 80
+
+Depth Tree: python3 ID3.py titanic-train titanic-test depth 50 40 14
+
+Min_Split Tree: python3 ID3.py titanic-train titanic-test min_split 50 40 2
+
+Prune Tree: python3 ID3.py titanic-train titanic-test prune 50 40
+
+Graph: python3 ID3.py titanic-train titanic-test graph
+      - In the main function, I have an if statement (Line: 533) regarding when
+      the model parameter passed in is "graph". Currently all functions are commented out.
+      However uncommenting any of the lines for graphQ1, graphQ2, graphQ3. will
+      save the graphs to the current directory using the savefig function.
